@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname"
+               placeholder="Enter first name" required>
+
+        <br><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname"
+               placeholder="Enter surname" required>
+
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="father">Father's Name:</label>
+        <input type="text" id="father" name="father"
+               placeholder="Enter father's name" required>
+
+        <br><br>
+
+        <label for="mother">Mother's Name:</label>
+        <input type="text" id="mother" name="mother"
+               placeholder="Enter mother's name" required>
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"
+               min="1" max="120" placeholder="Enter age" required>
+
+        <br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education" required>
+            <option value="">Select Education</option>
+            <option value="10th">10th Pass</option>
+            <option value="12th">12th Pass</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Graduate">Graduation</option>
+            <option value="Postgraduate">Post Graduation</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile"
+               placeholder="Enter mobile number"
+               pattern="[0-9]{10}"
+               maxlength="10" required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter email address" required>
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"
+                  rows="4" cols="30"
+                  placeholder="Enter your address"></textarea>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"
+               placeholder="Create password" required minlength="6">
+
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+</body>
+</html>
